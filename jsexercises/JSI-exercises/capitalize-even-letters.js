@@ -14,15 +14,15 @@
 let theString = prompt("enter a word or sentence");
 theString = theString.toLowerCase();
 let i = 0;
+let x=(i%2)
 
 while (i < theString.length){
-i++
-    if (i % 2 != 0){
+    if (i % 2 === 1){
         let currentLetter = theString[i];
         let newLetter = theString[i].toUpperCase();
         theString = theString.replace(currentLetter, newLetter);
-    } 
-console.log(i)
+    } i++
+console.log(i,theString[i], x)
 }
 
 console.log(theString);
