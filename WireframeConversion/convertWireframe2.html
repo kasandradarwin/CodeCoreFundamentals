@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Wireframe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="convertWireframe.css">
+</head>
+<body>
+    <div>
+<div id="navigationbar">
+    <ul class="nav justify-content-left">
+        <li class="nav-item">
+          <a class="nav-link active text-black" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+            <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
+          </svg>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+            <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/>
+          </svg>Moments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-bell-fill" viewBox="0 0 16 16">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+          </svg>Notifications</a>
+        </li>
+        <li class="nav-item ">
+            <a class="nav-link text-black" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+              </svg>Messages</a>
+          </li>
+        <li class="nav-link twitter-icon">
+          <a class="nav-link text-blue"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+          </svg></a>
+        </li>
+        <form class="d-flex" role="search">
+            <input class="form-control me-2 search-box" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit"> </button>
+          </form>
+          <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
+          </svg>
+      </ul>
+</div>
+
+<div>
+    <header>
+       <p style="line-height: 50px; color: seashell; text-align: center;"> #layout </p>
+    </header>
+</div>
+
+<div id="secondMenu">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active text-black" aria-current="page" href="#">Top</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#">Latest</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="#">People</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-black ">Photos</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link text-black">Videos</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link text-black dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">More</a>
+            <ul class="dropdown-menu">
+          </li>
+      </ul>
+</div>
+<br><hr>
+<div class= "container">
+  <div class="content-container content-small box-1">Related Searches</div>
+  <div class="content-container content-small box-2">Who to follow</div>
+  <div class="content-container content-small box-3">Trends</div>
+  <div class="content-container content-large box-4">5 new results<hr>
+  <img src="#"/> TweetAuthor@tweet log <br>
+  <div class="placeholderphoto"> </div>
+  <br>
+  <img src="#"/> TweetAuthor@tweet log <br>
+  <div class="placeholderphoto"> </div>
+  
+
+  
+  </div>
+
+ </div>
+    
+</body>
+</html>

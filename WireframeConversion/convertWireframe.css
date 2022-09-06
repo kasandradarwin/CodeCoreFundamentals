@@ -1,0 +1,62 @@
+* {
+    color: black;
+}
+
+
+
+.twitter-logo{
+    color:cornflowerblue;
+}
+
+header {
+    background-color: navy;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 60vw;
+    grid-template-rows: 1fr fr 1fr 80vw;
+    gap: 5px;
+
+}
+
+.box-1, .box-2, .box-3, .box-4{
+    border: 1px solid black;
+}
+.box-1, {
+    height: 20px;
+}
+.box-2, .box-3 {
+    width: 20vw;
+    grid-row-start: span 1;
+    grid-row-end: span 1;
+    grid-column-start: 1;
+    
+}
+
+.box-4{
+    height: 90vh;
+    grid-row-start: span 3;
+    grid-row-end: span 3;
+    grid-column-start: span 3;
+    grid-column-end: span 3;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+}
+
+.placeholderphoto {
+
+    border: 1px solid black;
+    height: 40%;
+    width: 90%;
+    padding:10px;
+    margin: 0 auto;
+}
+
+.search-box{
+    border-radius: 40%;
+}

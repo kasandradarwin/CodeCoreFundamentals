@@ -43,3 +43,19 @@ while (i < theString.length){
 
 console.log(returnString)
 
+////attempt 3
+
+let theString="helloooooooo";
+theString = theString.toLowerCase().split("");
+
+function capString(){
+    for (i=1; i<theString.length; i+=2){
+        theString[i] = theString[i].toUpperCase();
+        console.log("test " + theString[i])
+    }
+
+    return theString.join("");
+
+}
+
+capString()

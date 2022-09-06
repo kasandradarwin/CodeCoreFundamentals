@@ -9,14 +9,15 @@
 
 names = { mike: 2, john: 3, jen: 5, eli: 1}
 
-function mostPopularName(obj){
-for (let i = 0; i < names.length; i++) {
-    const element = array[index];
-    
-}    
+let currentHighest;
+
+function mostPopularName(){
+    for 
+
+  
 
 
-    return(`the most popular name is ${}`)
+    return(`the most popular name is ${currentHighest}`)
 }
 
 mostPopularName()

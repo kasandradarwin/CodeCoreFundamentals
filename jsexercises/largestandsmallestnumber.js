@@ -7,4 +7,4 @@
 
 const number = [3,64,3,56,34,12,5,0];
 
-const mix = [(number.indexof(Math.min(number))),(number.indexof(Math.max(number))];
+const mix =[(number.indexof(Math.min(number))),(number.indexof(Math.max(number))];
