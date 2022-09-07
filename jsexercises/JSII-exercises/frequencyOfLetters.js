@@ -9,7 +9,6 @@
 
 function frequencyOfLetter(){
     let sentence = prompt("Please enter a sentence");
-    sentence = sentence.replace(/\s/g, '');
     let obj={};
     for (let i = 0; i < sentence.length; i++) {
         const element = sentence[i];
@@ -25,3 +24,43 @@ function frequencyOfLetter(){
 }
 
 frequencyOfLetter()
+
+
+/// attempt 2, above plus alert with most common letter. It works but could be better with the stting of the variables..
+
+
+let obj = {};
+
+
+function mostRecurringLetter(userInput){
+   for (letter in userInput){
+    let current = userInput[letter];
+    let currentHighest = current[0];
+    console.log(currentHighest)
+
+    if (obj[current]){
+        obj[current]++
+    } else {
+        obj[current]=1;
+       }
+   } 
+   return(obj)
+   
+};
+
+const newObject = mostRecurringLetter(prompt("enter a sentence"));
+console.log(newObject)
+
+let currentHighest = 0;
+let mostPopularLetter = 'a';
+
+for (let key in newObject){
+    console.log("key: " + key + " newObject[key]: " + newObject[key])
+if (newObject[key] >= currentHighest){
+    currentHighest = newObject[key];
+    mostPopularLetter = key;
+    console.log(`${currentHighest} is now the currenthighest`)
+} 
+
+}
+alert(`the most commonly recurring letter in your sentence is: ${mostPopularLetter} with ${currentHighest} occurences`)
