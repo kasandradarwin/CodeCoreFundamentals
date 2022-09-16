@@ -27,7 +27,7 @@ frequencyOfLetter()
 
 
 /// attempt 2, above plus alert with most common letter. It works but could be better with the stting of the variables..
-
+// current doesn't exclude spaces
 
 let obj = {};
 
@@ -55,12 +55,12 @@ let currentHighest = 0;
 let mostPopularLetter = 'a';
 
 for (let key in newObject){
-    console.log("key: " + key + " newObject[key]: " + newObject[key])
+    //console.log("key: " + key + " newObject[key]: " + newObject[key])
 if (newObject[key] >= currentHighest){
     currentHighest = newObject[key];
     mostPopularLetter = key;
-    console.log(`${currentHighest} is now the currenthighest`)
+    //console.log(`${currentHighest} is now the currentHighest`)
 } 
 
 }
-alert(`the most commonly recurring letter in your sentence is: ${mostPopularLetter} with ${currentHighest} occurences`)
+alert(`the most commonly recurring letter in your sentence is: ${mostPopularLetter} with ${currentHighest} occurrences`)

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cat App</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<link rel="icon" type="image/x-icon" href="images/catlogo.jpeg">
+<style>
+
+* {
+  font-family: Arial, Calibri, Roboto, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS';
+color: rgb(99, 96, 96);
+font-size: 18px;
+}
+
+.button {
+    background-color:white;
+    border-radius: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: larger;
+    color: rgb(99, 96, 96);
+
+}
+h1 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.entireGrid {
+    display:flex;
+    flex-direction: column;
+}
+img {
+    margin: 10px;;
+    margin-top: 27px;
+}
+
+.catCaption{
+    text-align: center;
+    margin: auto;
+    padding-right: 25px;
+    
+}
+
+.headerName{
+    list-style:none;
+    text-align:center;
+    padding-top: 25px;
+    font-size:25px;
+
+}
+h6, .randomText{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.randomText{
+    line-height: 100%;
+    text-align: justify;
+}
+.nav-link {
+    padding-right: 50px;
+
+
+}
+.nav-bar {
+    margin-bottom: 0;
+}
+
+
+
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="images/catlogo.jpeg" width="90" height="52" class="d-inline-block align-top" alt="">
+    
+          </a>
+          <ul>
+              <li class="headerName">The Cat App</li>
+          </ul>
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Link
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Link
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+            </li>
+        </ul>
+    </nav>
+    
+
+
+      <div class="container">
+        <div class="row">
+            <hr>
+          <div class="col-sm">
+            <div class="signupForm">
+            <h1> Sign Up</h1>
+            <form>
+                <div class="mb-0">
+                  <label for="exampleInputEmail1" class="form-label">Username</label>
+                  <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <a class="btn btn-outline-dark button"  href="./signup.html" role="button">Submit</a>
+              </form>
+          
+                <hr>
+                <h6>1</h6>
+                <p class="randomText"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nobis culpa nihil est eum repudiandae totam corrupti perferendis praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officiis consequatur aut laborum quo in ipsa rem qui quasi cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <h6>2</h6>
+                <p class="randomText"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nobis culpa nihil est eum repudiandae totam corrupti perferendis praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officiis consequatur aut laborum quo in ipsa rem qui quasi cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h6>3</h6>
+                <p class="randomText"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut nobis culpa nihil est eum repudiandae totam corrupti perferendis praesentium. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni officiis consequatur aut laborum quo in ipsa rem qui quasi cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+            </div>
+          </div>
+          
+          <div class="col-sm entireGrid" style="border-left:thin solid lightgrey">
+    
+              <h1> Gallery</h1>
+            <div class="right-grid">
+                <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <img src="images/judgycat.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                      <div class="col-sm">
+                        <img src="images/judgycat2.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                      <div class="col-sm">
+                        <img src="images/judgycat3.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <img src="images/judgycat4.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                      <div class="col-sm">
+                        <img src="images/judgycat5.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                      <div class="col-sm">
+                        <img src="images/judgycat6.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-sm">
+                        <img src="images/judgycat7.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                      <div class="col-sm">
+                        <img src="images/judgycat8.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                      <div class="col-sm">
+                        <img src="images/judgycat9.jpeg" width="135" height="106" class="d-inline-block align-top" alt="">
+                        <p class="catCaption"> Cat Caption </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+<hr>
+</body>
+</html>
